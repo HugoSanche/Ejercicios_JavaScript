@@ -32,6 +32,9 @@ const emojipedia = [
 
 ];
 
-export default emojipedia;
+console.log(emojipedia[0].id);
+emojipedia.map(x => console.log(x.value));
 
- 
+
+
+export default emojipedia;

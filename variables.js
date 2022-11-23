@@ -29,21 +29,22 @@ function caso1(){
 //console.log(y); //error
 //console.log(z); //error
 
+
 //---------------------------------------------------------------------------------------------------------------------------
 //Ejemplo 3 Variables dentro de {} ya sea en if while, etc
 var fecha=new Date();
 var day =fecha.getDay();
 
 if (day===0) {
-  const semana=["Domingo","Lunes","Martes","Miercoles","Jueves","Viernes","Sabado"]; //Variable Local dentro de {}
+  const semana=["Domingo","Lunes","Martes","Miercoles","Jueves","Viernes","Sabado"]; //Variable Local dentro de {} .- es const es local
   console.log (semana[0]);
 }
 else if(day===1) {
-  var m=50;          //Variable Global dentro de {}
+  var m=50;          //Variable Global dentro de {}.- checa que esta declarada var. Si la declaras como var dentro de Statements es global
   console.log (m);
 }
 else if(day===2) {
-  let n=100;         //Variable Local dentro de {}
+  let n=100;         //Variable Local dentro de {} checa que esta declarada let
   console.log (n);
 }
 //console.log (semana[0]); //Error es una variable local
